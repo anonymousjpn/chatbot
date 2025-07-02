@@ -6,7 +6,7 @@ export default function Home() {
   const [searchStart, setSearchStart] = useState<boolean>(false);
   const [searchValue, setSearchValue] = useState<string>("");
   const [searchResult, setSearchResult] = useState<React.ReactNode>("");
-  const handleSearchValue = (event: React.ChangeEvent<HTMLInputElement>): void => {
+  const handleSearchValue = (event: React.ChangeEvent<HTMLInputElement>)=> {
     setSearchValue(event.target.value);
   };
   const handleSearch = async () => {
