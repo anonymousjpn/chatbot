@@ -12,7 +12,7 @@ export default function Home() {
   const handleSearch = async () => {
     setSearchStart(true);
     try {
-      const response = await fetch("/API", {
+      const response = await fetch("/api", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
